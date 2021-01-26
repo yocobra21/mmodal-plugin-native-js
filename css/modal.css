@@ -1,0 +1,59 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'),
+    local('.LucidaGrandeUI'), local('Ubuntu Light'), local('Segoe UI Light'),
+    local('Roboto-Light'), local('DroidSans'), local('Tahoma');
+}
+
+/* Теперь применим его к элементу */
+body {
+  font-family: 'system';
+}
+
+p {
+  margin: 0 0 5px 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+  border-radius: 5px;
+  margin: 100px auto;
+  border-radius: 8px;
+  /* config */
+  width: 600px;
+  background-color: #fff;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+.modal-footer {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
